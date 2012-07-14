@@ -1,0 +1,8 @@
+this is a minimal(well, almost minimal) amount of code required to run pygame and opengl.
+however, instead of using opengl textured quads to render all the stuff, this example
+draws everything on a regular pygame surface which is then converted to an opengl texture
+which is then rendered. I know, terribly inefficient, but it works for simple stuff.
+Why not just forget about opengl and use regular pygame blitting? Somehow regular pygame
+skips frames. It can run 999 fps but once or twice a second you notice a hiccup - even though
+the fps stays the same. I don't know what causes this shit but with opengl it seems to be
+reduced.
